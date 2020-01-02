@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "WorkSans-Light";
+  src: url("../fonts/WorkSans-Light.ttf");
+  /*300*/
+}
+
+@font-face {
+  font-family: "WorkSans-Regular";
+  src: url("../fonts/WorkSans-Regular.ttf");
+  /*400*/
+}
+
+@font-face {
+  font-family: "WorkSans-Medium";
+  src: url("../fonts/WorkSans-Medium.ttf");
+  /*500*/
+}
+
+@font-face {
+  font-family: "WorkSans-SemiBold";
+  src: url("../fonts/WorkSans-SemiBold.ttf");
+  /*600*/
+}
+/*# sourceMappingURL=fonts.css.map */

@@ -1,0 +1,112 @@
+@media screen and (max-width: 1235px) {
+  .kind-business_cont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .kind-business_block {
+    margin-bottom: 35px;
+  }
+  .kind-business_block:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1098px) {
+  .header-nav_menu {
+    display: none;
+  }
+  .toggle-menu {
+    display: block;
+  }
+  .toggle-menu_active {
+    display: block;
+  }
+  .info-block-left, .info-block-right {
+    margin-top: 95px;
+  }
+}
+
+@media screen and (min-width: 1098px) {
+  .header-nav_menu {
+    display: block;
+  }
+  .toggle-menu {
+    display: none;
+  }
+  .toggle-menu_active {
+    display: none;
+  }
+  .header-content_descr {
+    padding-top: 25px;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .header-content_descr {
+    padding-top: 35px;
+  }
+  .need-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info-cont {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .info-block-center {
+    display: none;
+  }
+  .info-descr {
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header-content {
+    padding-top: 20px;
+  }
+  .info-descr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .info-descr__img {
+    margin-bottom: 20px;
+  }
+  .info-descr {
+    height: 290px;
+    padding: 5px 5px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .header-content_img {
+    display: none;
+  }
+  .header-content_descr {
+    text-align: center;
+  }
+  .header-content_descr h1 {
+    width: 100%;
+  }
+  .header-content_descr p {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=media.css.map */
