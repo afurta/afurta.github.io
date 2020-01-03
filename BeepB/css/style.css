@@ -374,11 +374,10 @@ h3 {
   -ms-flex-line-pack: justify;
       align-content: space-between;
   text-align: left;
-  height: 160px;
 }
 
 .info-descr p {
-  height: 48px;
+  padding-bottom: 25px;
   font-family: "WorkSans-Regular", sans-serif;
   font-size: 18px;
   color: #7a7c82;
@@ -386,7 +385,7 @@ h3 {
 }
 
 .info-descr__img {
-  display: block;
+  margin-bottom: 20px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -561,6 +560,11 @@ h3 {
   font-family: "WorkSans-Medium", sans-serif;
   color: #323643;
   font-size: 20px;
+}
+
+.prev-nav img, .next-nav img{
+  width: 50px;
+  height: 50px;
 }
 
 /*end kind-business*/

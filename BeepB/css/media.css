@@ -64,9 +64,6 @@
   .info-block-center {
     display: none;
   }
-  .info-descr {
-    height: 220px;
-  }
 }
 
 @media screen and (max-width: 900px) {
@@ -86,12 +83,15 @@
             align-items: center;
     text-align: center;
   }
-  .info-descr__img {
-    margin-bottom: 20px;
+  .info-descr h3 {
+    height: 69px;
+    margin: 0;
+  }
+  .info-descr p {
+    margin-top: 0;
   }
   .info-descr {
-    height: 290px;
-    padding: 5px 5px;
+    padding: 20px 5px;
   }
 }
 
