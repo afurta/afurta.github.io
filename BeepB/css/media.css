@@ -108,5 +108,13 @@
   .header-content_descr p {
     width: 100%;
   }
+  .footer-bloks{
+    flex-wrap: wrap;
+  }
+  .footer-block{
+    flex-basis: 50%;
+    text-align: center;
+    margin-bottom: 45px;
+  }
 }
 /*# sourceMappingURL=media.css.map */
