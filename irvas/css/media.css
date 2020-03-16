@@ -1,0 +1,107 @@
+@media screen and (max-width: 1200px) {
+  header .time {
+    display: none;
+  }
+  .about-us__map {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  header .time {
+    display: none;
+  }
+  header .logo-descr {
+    display: none;
+  }
+  .main .form {
+    display: none;
+  }
+  .main-descr p {
+    margin: 100px auto;
+  }
+  .main-advantages {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-advantages p {
+    margin-top: -15px;
+  }
+  .stock .form {
+    display: none;
+  }
+  .stock-descr span {
+    text-align: center;
+  }
+  .stock-descr p {
+    margin: 0 auto;
+    max-width: 412px;
+    text-align: center;
+  }
+  .order .form {
+    display: none;
+  }
+  .order h2::after {
+    top: 87px;
+    left: 37%;
+  }
+  .job .material-descr {
+    padding-left: 65px;
+  }
+  .job .material-send {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .work-time .btn-call {
+    display: none;
+  }
+  .job .material-descr {
+    padding-left: 0;
+  }
+  .job .material-send {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .order .installation__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .order .installation__block__descr {
+    text-align: center;
+  }
+  .order h2::after {
+    top: 87px;
+    left: 33%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .type-of-repair {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .payment h2::after {
+    top: 87px;
+    left: 31%;
+  }
+}
+
+@media screen and (max-width: 523px) {
+  .main-advantages {
+    display: none;
+  }
+  .main-descr p {
+    text-align: center;
+  }
+  .send-btn {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=media.css.map */

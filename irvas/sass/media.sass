@@ -1,0 +1,80 @@
+@media screen and ( max-width: 1200px )
+    header .time
+        display: none
+    .about-us__map 
+        margin-right: 0
+@media screen and ( max-width: 991px )
+    header 
+        & .time
+            display: none
+        & .logo-descr
+            display: none
+    .main 
+        & .form
+            display: none
+        &-descr p
+            margin: 100px auto
+        &-advantages
+            justify-content: center    
+            & p
+                margin-top: -15px
+    .stock 
+        & .form
+            display: none
+        &-descr 
+            & span
+                text-align: center
+            & p
+                margin: 0 auto
+                max-width: 412px
+                text-align: center
+    .order 
+        & .form
+            display: none
+        h2::after
+            top: 87px
+            left: 37%
+    .job
+        & .material
+            &-descr
+                padding-left: 65px
+            &-send
+                padding-left: 65px
+                padding-right: 65px
+
+@media screen and ( max-width: 768px)
+    header .work-time .btn-call
+        display: none
+    .job
+        & .material
+            &-descr
+                padding-left: 0
+            &-send
+                padding-left: 0
+                padding-right: 0
+    .order
+        & .installation__block
+            flex-direction: column
+            &__descr
+                text-align: center
+    .order 
+        h2::after
+            top: 87px
+            left: 33%
+
+@media screen and ( max-width: 568px)
+    .type-of-repair
+        justify-content: center
+    .payment
+        h2::after
+            top: 87px
+            left: 31%
+@media screen and ( max-width: 523px)
+    .main
+        &-advantages
+            display: none
+        &-descr p
+            text-align: center
+    .send-btn
+        padding: 0 
+        

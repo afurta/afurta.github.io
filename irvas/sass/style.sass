@@ -1,0 +1,525 @@
+*
+    margin: 0
+    padding: 0
+body
+    background: #ffffff
+header
+    padding-top: 20px
+    padding-bottom: 20px
+    background: #ffffff
+    & .logo
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        align-items: center
+        font-size: 14px
+        text-align: left
+        color: #0096dc
+        &-img
+            margin-right: 26px
+        &-descr span
+            max-width: 220px
+            display: block
+            font-family: "OpenSans-Regular"
+
+    & .work-time
+        display: flex
+        justify-content: space-around
+        align-items: center
+        flex-direction: row
+        & .btn-call
+            display: flex
+            flex-direction: row
+            align-items: center
+            padding: 10px 15px
+            text-align: left
+            color: #55a831
+            border-radius: 10px
+            border: solid 2px #55a831
+            cursor: pointer
+            & span 
+                font-family: "OpenSans-SemiBold"
+                font-size: 14px
+                width: 100px
+                display: block
+                line-height: 18px
+            & img
+                margin-right: 10px
+    & .time
+        display: flex
+        flex-direction: row
+        align-items: center
+        & span
+            font-family: "OpenSans-Regular"
+        & img
+            margin-right: 21px
+    & .phone
+        display: flex
+        flex-direction: row
+        align-items: flex-start
+        justify-content: space-around
+        & span
+            display: block
+        & img
+            margin-top: 7px
+            margin-right: 15px
+        &-number
+            & a
+                font-family: "OpenSans-Bold"
+                font-size: 23px
+                text-align: right
+                color: #333333
+                margin-bottom: 14px
+            & span
+                font-family: "OpenSans-Regular"
+                font-size: 15px
+                text-align: right
+                color: #0089cc
+.main
+    padding-top: 100px
+    background: url(../img/main/main-bg.png) no-repeat center 
+    background-size: cover
+    height: 100vh  
+    &-descr
+        & p
+            max-width: 480px
+            font-family: "OpenSans-Bold"
+            font-size: 26px
+            text-align: left
+            color: #333333
+            text-align: left
+            margin-bottom: 100px
+            & span
+                font-size: 53px
+                text-align: left
+                color: #333333
+    &-advantages
+        display: flex
+        flex-direction: row
+        justify-content: flex-start 
+.advantages-block
+    border: solid 1px #ffffff
+    background-color: #0d8fe3
+    display: block
+    width: 100px
+    height: 100px
+    border-radius: 50%
+    margin-right: 20px
+    & img
+        transform: translateY(-20px)
+        height: 52px
+        margin: 0 auto
+        display: block
+    & p
+        font-family: "OpenSans-Bold"
+        font-size: 14px
+        text-align: center
+        color: #ffffff
+        margin-top: -15px
+.form
+    border-radius: 10px
+    background-color: #ffffff
+    padding: 35px 50px
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    text-align: center  
+    & .title
+        display: block
+        font-family: "OpenSans-Bold"
+        font-size: 20px
+        color: #333333
+        margin-bottom: 35px
+    & input
+        margin-bottom: 20px
+        border-radius: 10px
+        border: solid 1px #d1d1d1
+        height: 60px
+        text-align: center
+        outline: none
+    & form
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        & label
+            font-family: "OpenSans-Regular"
+            font-size: 11px
+            letter-spacing: normal
+            text-align: center
+            color: #666666
+.send
+    border-radius: 10px
+    box-shadow: 0px 2px 20px 0 rgba(255, 153, 0, 0.4)
+    border: solid 1px #ffc600
+    background-image: linear-gradient(to top, #ffed26, #ffb400)
+    font-family: "OpenSans-Bold"
+    font-size: 20px
+    text-align: center
+    color: #000000
+
+// job
+h2
+    font-family: "OpenSans-Bold"
+    font-size: 30px
+    text-align: center
+    color: #333333
+    position: relative
+    margin-bottom: 100px
+    &:after
+        position: absolute
+        top: 52px
+        left: 41%
+        margin: 0 auto
+        content: ' '
+        display: block
+        width: 170px
+        height: 2px
+        background: url(../img/after.png)
+
+.job
+    padding-top: 80px
+
+.material
+    &-block
+        text-align: center
+        margin-bottom: 39px
+        & img
+            margin-bottom: 32px
+            width: 100px
+            height: 100px
+        & p
+            font-family: "OpenSans-SemiBold"
+            font-size: 18px
+            text-align: center
+            color: #249ae6
+    &-info
+        padding: 40px 40px
+        text-align: center
+        margin-bottom: 100px
+        & .title
+            display: block
+            font-family: "OpenSans-Bold"
+            font-size: 20px
+            text-align: center
+            margin-bottom: 29px
+            text-transform: uppercase
+        & .title-cold
+            color: #0d8fe3
+        & .title-warm
+            color: #ffb903
+    &-cold
+        background: url(../img/job/fon.png) top no-repeat, url(../img/job/str-cold.png) top no-repeat
+    &-warm
+        background: url(../img/job/fon-1.png) top no-repeat, url(../img/job/str-warm.png) top no-repeat
+    &-photo
+        overflow: hidden
+        & img
+            height: 355px
+            margin-bottom: 37px
+    &-descrs
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        margin-bottom: 36px
+    &-descr
+        display: flex
+        flex-direction: row
+        align-items: flex-start
+        margin-bottom: 5px
+        & p
+            text-align: left
+            font-family: "OpenSans-Regular"
+            font-size: 14px
+            color: #000000
+        & img
+            margin-right: 17px
+    &-send
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        &__info
+            text-align: left
+            & p
+                font-family: "OpenSans-Bold"
+                font-size: 20px
+                color: #000000
+            & small
+                font-family: "OpenSans-Regular"
+                font-size: 14px
+                color: #000000
+
+.send-btn
+    border-radius: 10px
+    box-shadow: 0px 2px 20px 0 rgba(255, 153, 0, 0.4)
+    border: solid 1px #ffc600
+    background-image: linear-gradient(to top, #ffed26, #ffb400)
+    font-family: "OpenSans-Bold"
+    font-size: 19px
+    text-align: center
+    color: #000000
+    padding: 18px 19px
+
+// job        
+
+// order    
+.order 
+    padding-top: 80px
+    background-color: #f7f7f7
+    padding-bottom: 80px
+.type-of
+    &-repair
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        flex-wrap: wrap
+        & li
+            list-style: none
+            padding: 30px 25px
+            & a
+                font-family: "OpenSans-SemiBold"
+                font-size: 18px
+                text-align: center
+                color: #0085db   
+.installation
+    transition: all 0.5s ease-in 
+    &__block
+        display: none
+        flex-direction: row
+        justify-content: flex-start
+        align-items: center
+        &__img
+            margin-right: 25px 
+        &__str
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            align-items: center
+            text-align: center
+            margin-bottom: 40px
+            & img
+                margin-bottom: 20px
+        &__info
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            height: 97px
+            & .str-text
+                margin-bottom: 0px
+        &__descr
+            justify-content: flex-start
+            display: flex
+            flex-direction: column
+            flex-wrap: wrap
+        &__p
+            font-family: "OpenSans-Bold"
+
+        &__type
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+.installation__active
+    display: flex
+.str-title
+    display: block
+    font-family: "OpenSans-Regular"
+.str-price
+    font-family: "OpenSans-Bold"
+    font-size: 14px
+    text-align: left
+    color: #0d8fe3
+.str-type
+    font-family: "OpenSans-Regular"
+    font-size: 11px
+    text-align: center
+    color: #000000
+.width-interior-decoration
+    flex-basis: 33%
+.width-external-finish
+    flex-basis: 15%
+    margin-right: 20px
+.remote-glazing
+    flex-direction: row
+.width-remote-glazing
+    flex-direction: row
+    align-items: center
+    & img
+        margin-bottom: 0
+        width: 30px
+        margin-right: 25px
+.width-roof
+    flex-direction: row
+    align-items: center
+    & img
+        margin-bottom: 0
+        margin-right: 20px
+.installation-column
+    flex-direction: column
+// order   
+
+// our-work
+.our-work
+    text-align: center
+    padding-top: 80px
+    padding-bottom: 80px
+.work-block
+    background-image: url(../img/our-work/zoom-in.png) 
+    width: 100%
+    height: 270px
+    border-radius: 10px
+    margin-right: 40px
+    margin-bottom: 40px
+    overflow: hidden
+    position: relative 
+    & .work-block__img
+        width: 100%
+        height: 120%
+    &__zoom-in
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-image: url(../img/our-work/zoom-in.png)
+        background-repeat: no-repeat
+        background-position: center
+        transform: scale(0)
+        transition: all 0.2s ease-in 
+    & .zoom-in_active       
+        transform: scale(1)
+        cursor: pointer
+// our-work 
+
+// assurance
+
+.assurance
+    text-align: center
+    padding-top: 80px
+    padding-bottom: 80px
+    background-color: #007ab3
+    & h2
+        color: #ffffff
+        &:after
+            background: url(../img/after-white.png)
+    &-block    
+        text-align: center
+        margin-bottom: 80px
+        font-family: "OpenSans-Regular"
+        font-size: 18px   
+        color: #ffffff
+        & img
+            margin-bottom: 30px
+// assurance 
+// payment
+.payment
+    text-align: center
+    padding-top: 40px
+    padding-bottom: 40px
+    & h2
+        margin-bottom: 80px
+    &-block
+        display: flex
+        flex-direction: row
+        align-items: center
+        font-family: "OpenSans-Regular"
+        font-size: 20px
+        text-align: left
+        color: #000000
+        & p 
+            margin-bottom: 0
+        & img
+            margin-right: 34px
+// payment           
+// stock
+.stock
+    padding-top: 80px
+    padding-bottom: 80px
+    background: url(../img/stock/stock-img.png) center 
+    background-size: cover
+    &-title
+        display: block
+        font-family: "OpenSans-Bold"
+        font-size: 38px
+        text-align: left
+        color: #008cce
+        margin-bottom: 81px
+    &-descr
+        font-family: "OpenSans-Regular"
+        font-size: 24px
+// stock        
+
+// about-us
+.about-us
+    padding-top: 80px
+    padding-bottom: 80px
+    text-align: center
+    &__map
+        margin-right: 138px
+    &__descr
+        text-align: left
+        & p
+            font-family: "OpenSans-SemiBold"
+            font-size: 18px
+            text-align: left
+            margin-bottom: 39px
+            color: #000000
+    &__title
+        font-family: "OpenSans-SemiBold"
+        font-size: 15px
+        color: #008cce
+        margin-bottom: 18px
+// about-us 
+
+// questions       
+.questions
+    text-align: center
+    padding-top: 40px
+    padding-bottom: 40px
+    background-color: #00a0eb
+    & p
+        font-family: "OpenSans-Regular"
+        font-size: 30px
+        color: #ffffff
+        margin-bottom: 0
+    & a
+        font-family: "OpenSans-SemiBold"
+        font-size: 30px
+        color: #ffffff
+// questions
+
+// active-img
+.active-img
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    background: rgba(1,1,1, 0.5)
+    display: none
+    &__block
+        position: relative
+        display: block
+        width: 60vw
+        height: 70vh
+        background: #ffffff
+        border-radius: 10px
+        overflow: hidden
+    & .close-block
+        position: absolute
+        top: 15px
+        right: 15px
+        width: 30px
+        height: 30px
+        cursor: pointer
+    & .block-img
+        width: 100%
+        height: 100%
+.active-block
+    display: flex 
+
+
+// active-img
