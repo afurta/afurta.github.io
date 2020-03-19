@@ -407,13 +407,13 @@ h2:after {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.material-send__info {
-  text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .material-send__info p {
@@ -439,7 +439,7 @@ h2:after {
   font-size: 19px;
   text-align: center;
   color: #000000;
-  padding: 18px 19px;
+  padding: 20px 20px;
 }
 
 .order {
