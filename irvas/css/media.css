@@ -14,8 +14,16 @@
   header .logo-descr {
     display: none;
   }
+  .main {
+    padding-top: 245px;
+  }
   .main .form {
     display: none;
+  }
+  .main-descr {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .main-descr p {
     margin: 100px auto;
@@ -113,9 +121,6 @@
 }
 
 @media screen and (max-width: 531px) {
-  .main-advantages {
-    display: none;
-  }
   .main-descr p {
     text-align: center;
   }
