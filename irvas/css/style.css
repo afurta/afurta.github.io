@@ -792,6 +792,23 @@ h2:after {
   font-size: 24px;
 }
 
+.timer-block {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  border: solid 1px #d1d1d1;
+}
+
+.timer-block__title {
+  display: block;
+  text-transform: uppercase;
+  font-family: "OpenSans-SemiBold";
+  font-size: 14px;
+  color: #000000;
+}
+
 .about-us {
   padding-top: 80px;
   padding-bottom: 80px;
