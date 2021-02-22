@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "MullerMedium";
+  src: url("../fonts/MullerMedium.ttf");
+}
+
+@font-face {
+  font-family: "MullerBold";
+  src: url("../fonts/MullerBold.ttf");
+}
+
+@font-face {
+  font-family: "MullerRegular";
+  src: url("../fonts/MullerRegular.ttf");
+}
+/*# sourceMappingURL=fonts.css.map */

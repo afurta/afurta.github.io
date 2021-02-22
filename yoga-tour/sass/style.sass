@@ -1,0 +1,879 @@
+*
+    padding: 0
+    margin: 0
+
+body
+    background: #fff 
+
+.container
+    max-width: 940px
+    margin: 0 auto    
+
+// slick
+.slick-dots li button
+    width: 11px
+    height: 11px
+    
+.slick-dots li button::before
+    content: ' '
+    width: 6px
+    height: 6px
+    background: #ffffff   
+    border-radius: 50%
+    top: 50%
+    left: 50%
+    margin: -7px 0 0 -5px
+    opacity: 1
+
+.slick-dots li.slick-active button::before    
+    opacity: 0
+.slick-dots li.slick-active button
+    border: 1px solid #ffffff     
+    border-radius: 50% 
+// slick    
+header 
+    background: url(../img/main/main_bg.png) no-repeat center top
+    background-size: cover
+    height: 100vh
+    text-align: center
+.header
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 100vh
+    &-top
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        padding-top: 10px
+        &_info
+            display: flex
+            flex-direction: column
+            text-align: right
+            &_text
+                font-family: MullerRegular
+                font-size: 14px
+                line-height: 1.29
+                letter-spacing: normal
+                color: #ffffff
+                margin-bottom: 10px  
+            &_number
+                font-family: MullerBold
+                font-size: 20px
+                font-weight: bold
+                line-height: 0.9
+                color: #ffffff
+    &-main
+        display: flex
+        flex-direction: column
+        align-items: center
+        & h1
+            font-family: "MullerMedium"
+            font-size: 60px
+            font-weight: 500
+            color: #ffffff
+            margin-bottom: 45px
+            text-transform: uppercase
+        &_sub-title
+            font-family: MullerRegular
+            text-transform: uppercase
+            font-size: 20px
+            line-height: 1.29
+            letter-spacing: normal
+            color: #ffffff
+            margin-bottom: 14px
+            &_location
+                font-family: MullerRegular
+                font-size: 14px
+                line-height: 1.29
+                letter-spacing: normal
+                color: #ffffff
+                margin-bottom: 80px
+        & .btn
+            display: block
+            width: 300px
+            height: 60px
+            border: solid 2px #ffffff
+            background-color: transparent
+            font-family: MullerBold
+            font-size: 18px
+            font-weight: bold
+            color: #ffffff
+    &-social 
+        margin: 0 auto
+        padding-bottom: 40px
+        &_icon
+            display: flex
+            flex-direction: row    
+            & a
+                margin-right: 10px
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                width: 26px
+                height: 26px
+                border: solid 1px #ffffff      
+                border-radius: 50%  
+                text-decoration: none
+                color: #ffffff 
+                &:last-child
+                    margin-right: 0   
+
+// about-trip 
+.section-wrapper              
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    flex-basis: 50%      
+    flex-wrap: wrap
+.about-trip
+    background-color: #f8f2e4
+    padding-top: 50px
+    padding-bottom: 50px
+    &_descr
+        padding-top: 50px
+        & p
+            max-width: 350px
+            font-family: MullerMedium
+            font-size: 14px
+            color: #000000
+        & h2
+            margin-bottom: 46px
+            &::after
+                display: none
+            & span
+                text-transform: uppercase
+                font-size: 40px
+        &_list
+            padding-top: 40px
+            &_block
+                display: flex
+                flex-direction: row
+                margin-bottom: 16px
+                & span
+                    margin-right: 20px
+                    width: 35px
+                & p 
+                    text-transform: uppercase   
+h2 
+    font-family: MullerBold
+    font-size: 35px
+    color: #000000
+    
+// about-trip
+
+// reasons
+h2
+    &::after
+        margin: 19px auto
+        display: block
+        content: ' '
+        width: 119px
+        height: 6px
+        margin-bottom: 30px
+        background: url(../img/before-title.png)
+
+.reasons
+    padding-top: 50px
+    background-color: #ffffff
+    text-align: center
+    &_blocks
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        flex-wrap: wrap
+    &_block
+        display: flex
+        flex-basis: 30%
+        flex-direction: column
+        align-items: center
+        margin-bottom: 25px
+        &_img 
+            margin-bottom: 20px
+        & p
+            max-width: 80%
+            font-family: MullerMedium
+            font-size: 16px
+            color: #000000
+
+// reasons
+
+// about_journey
+h3 
+    font-family: MullerRegular
+    font-size: 30px
+    color: #ffffff
+    text-transform: uppercase    
+    margin-bottom: 24px
+    
+.about_journey
+    padding-top: 50px
+    background-color: #f8f2e4
+    text-align: center
+.slider-center
+    overflow: hidden
+    &_wrapper
+        margin: 0 auto
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        &_block
+            max-width: 940px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center 
+            background-size: contain
+            background-position: center
+            height: 400px
+            & p
+                width: 80%
+                font-family: MullerRegular
+                font-size: 18px
+                color: #ffffff
+    & .slick-initialized .slick-slide
+        display: flex
+
+// about_journey            
+
+// schedule
+h4 
+    font-family: MullerRegular
+    font-size: 18px
+    color: #000000    
+.schedule
+    text-align: center
+    padding-top: 50px
+    &-blocks
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        flex-wrap: wrap
+        margin-bottom: 50px
+    &-block
+        flex-basis: 24%     
+        margin-bottom: 20px
+        background-color: #fff8e6
+        padding-top: 30px   
+        & .data
+            font-family: MullerRegular
+            font-size: 14px
+            color: #4b4b4b
+            margin-bottom: 13px
+            display: block
+        & a 
+            font-family: MullerRegular
+            font-size: 12px
+            color: #5a56af
+            margin-top: 19px 
+            margin-bottom: 15px
+            display: block   
+        & p 
+            margin-bottom: 15px
+            display: none
+.schedule-btn
+    border: solid 2px #e28234
+    background-color: transparent
+    padding: 15px 30px
+    font-family: MullerBold
+    font-size: 12px
+    color: #e28234
+    margin-bottom: 20px
+    transition: all 0.3s ease
+    &:hover
+        background-color: #e28234
+        color: #ffffff
+// schedule   
+
+// program
+.program
+    text-align: center
+    background-color: #f8f2e4
+    padding-top: 50px
+// program             
+
+// about-medicine
+.about-medicine
+    text-align: center
+    padding-top: 50px
+    & p
+        font-family: MullerRegular
+        font-size: 18px
+        color: #000000
+        margin-top: 30px
+        margin-bottom: 40px   
+    & h3
+        color: #000000   
+        font-size: 24px  
+        margin-bottom: 60px  
+    &_blocks
+        display: flex
+        flex-direction: column
+        align-items: center
+    &_block
+        display: flex
+        flex-direction: row
+        align-items: center
+        margin-bottom: 30px
+        &_descr
+            text-align: left
+            font-size: 18px
+            max-width: 480px
+        &_photo 
+            margin-right: 40px
+            overflow: hidden 
+            width: 127px
+            height: 127px
+            border-radius: 50%  
+            & img   
+                margin: 0 -50%
+    &_center
+        &_blocks
+            display: flex
+            flex-direction: row
+            margin-bottom: 50px
+        &_block
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            flex-wrap: wrap 
+            flex-basis: 50% 
+            margin-right: 50px
+        &_descr
+            padding-top: 24px
+            flex-basis: 50%
+            text-align: left
+            & h3
+                margin-bottom: 10px
+            & .sub-title
+                font-family: MullerMedium
+                font-size: 14px
+                font-weight: 300
+                color: #4b4b4b
+                margin-bottom: 35px
+                display: block
+            & p    
+                font-family: MullerMedium
+                font-size: 12px
+                text-align: left
+                color: #000000
+                margin-top: 0px
+                margin-bottom: 10px
+        &_img
+            width: 139px
+            height: 139px
+            overflow: hidden
+            flex-basis: 30%    
+            margin-bottom: 20px
+        &_places
+            margin-top: 50px
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+        &_place
+            display: flex
+            flex-direction: row
+            align-items: center
+            flex-basis: 50%
+            font-family: MullerMedium
+            color: #454545
+            & img
+                align-self: flex-start
+                margin-right: 10px
+
+// about-medicine
+
+// instructors        
+.instructors
+    text-align: center
+    &_blocks
+        margin-bottom: 50px
+
+.instructor
+    &_block
+        display: flex
+        flex-direction: row
+        align-items: flex-end
+        height: 80vh
+        background-position:  center
+        background-size: cover
+        background-repeat: no-repeat
+        position: relative
+        margin-bottom: 19px
+        padding-right: 40px
+        padding-left: 40px
+        &_info
+            display: flex
+            flex-direction: row
+            // opacity: 0.5
+            // background-color: #444444
+            width: 100%
+            padding-top: 40px
+            margin-bottom: 45px
+        &_name
+            flex-basis: 27%
+            margin-right: 10px
+            & p 
+                text-align: left
+            & .instructor-name
+                font-family: MullerBold
+                font-size: 30px
+                color: #ffffff
+                margin-bottom: 20px
+            & .instructor-dir
+                display: block
+                font-family: MullerRegular
+                font-size: 16px
+                font-style: italic
+                text-align: left
+                color: #ffffff
+        &_descr
+            max-width: 73%
+            margin-left: 46px
+            &::before
+                content: ' '
+                display: block
+                width: 2px
+                height: 78px
+                background-color: #ffffff
+                position: absolute
+                margin-left: -30px
+            &_arr
+            &_slide
+                font-family: MullerRegular
+                font-size: 14px
+                text-align: left
+                color: #ffffff 
+                font-size: 16px
+            & .slick-dots
+                bottom: -61px
+                text-align: right
+.prev, .next 
+  width: 16px
+  height: 25px
+  z-index: 1
+  cursor: pointer
+.prev 
+    margin-right: 64px   
+.next 
+    margin-left: 64px         
+                
+// instructors
+
+// reviews            
+.reviews
+    text-align: center
+    padding-bottom: 50px
+    // slick
+    & .slick-dots li button::before
+        background: #b4b4b4
+    & .slick-dots li.slick-active button
+        border: 2px solid #746565     
+        border-radius: 50%
+    // slick        
+    &-slider    
+        display: flex
+        flex-direction: row
+        max-width: 940px
+        margin-top: 60px
+        align-items: center
+    &-wrapper_block
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        &_photo 
+            width: 12vw
+            height: 11vw
+            margin-right: 40px
+            overflow: hidden
+            border-radius: 50%
+            & img
+                background-position: left       
+                height: 100%
+        &_info
+            flex-basis: 80%
+            text-align: left    
+            & .name
+                display: block
+                font-family: MullerBold
+                font-size: 18px
+                color: #000000
+                margin-bottom: 5px
+            & .social
+                margin-bottom: 17px
+                display: block
+                font-family: MullerRegular
+                font-size: 12px
+                color: #c94410
+            & p 
+                font-family: MullerRegular
+                font-size: 14px
+                font-style: italic
+                color: #393939
+                width: 90%
+                text-align: left
+    & .slick-slide
+        display: flex
+        margin-bottom: 30px 
+
+// reviews 
+
+// advantages
+.advantages
+    padding-top: 50px
+    text-align: center
+    background-color: #f8f2e4
+    &-blocks
+        margin-top: 50px
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-around
+    &-block
+        flex-basis: 30%
+        height: 265px
+        margin-bottom: 50px
+        text-align: center
+        & img
+            margin: 10px 0 
+        & .adv
+            display: block
+            font-family: MullerBold
+            font-size: 18px
+            color: #000000
+            margin: 16px 0 
+        & p
+            margin: 0 auto
+            width: 80%
+            font-family: MullerRegular
+            font-size: 16px
+            color: #000000
+// advantages           
+
+// about-work    
+.about-work
+    text-align: center
+    padding-top: 50px
+    & .sub-title
+        display: block
+        margin-top: 30px
+        margin-bottom: 40px
+        font-family: MullerRegular
+        font-size: 18px
+        font-style: italic
+        color: #3f3f3f
+    &_blocks
+        margin-bottom: 50px
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        align-items: flex-start
+        & .str 
+            margin-top: 40px
+    &_block
+        flex-basis: 14%
+        font-family: MullerRegular
+        font-size: 12px
+        color: #3f3f3f
+        & img
+            margin-bottom: 20px
+        & a
+            font-family: MullerRegular
+            font-size: 12px
+            color: #ea7231
+// about-work    
+
+// price
+.prices
+    background-color: #f8f2e4
+    text-align: center
+    padding-top: 50px
+    padding-bottom: 40px
+.prices-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 50px
+.price    
+    &_tour
+        display: flex
+        flex-direction: column
+        &_list
+            background: #ffffff
+            padding: 50px 50px
+            &_block
+                display: flex
+                flex-direction: row
+                justify-content: space-around
+                margin-bottom: 15px
+                &_info
+                    text-align: left
+                    margin-right: 77px
+                    font-family: MullerRegular
+                    font-size: 21px
+                    font-weight: 300
+                    text-align: left
+                    color: #000000
+                &_price
+                    text-align: left
+                    font-family: MullerRegular
+                    font-size: 20px
+                    text-align: left
+                    color: #dd490f
+        &_info
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            background-color: #f4e1b6
+            padding: 26px 50px
+            align-items: center
+            & p
+                font-family: MullerMedium
+                font-size: 20px
+                color: #000000
+            & .schedule-btn
+                padding: 14px 43px
+                margin-bottom: 0
+                margin-top: 0
+.prices-provide
+    display: flex
+    flex-direction: column
+    align-items: center
+    & .title
+        font-family: MullerMedium
+        font-size: 24px
+        color: #000000
+    &_list
+        margin-top: 38px
+        display: flex
+        flex-direction: column
+        padding-bottom: 40px
+    &_str
+        display: flex
+        flex-direction: row
+        align-items: flex-start
+        font-family: MullerRegular
+        font-size: 18px
+        color: #4e4e4e
+        margin-bottom: 10px
+        text-align: left
+        & img
+            margin-right: 20px
+    &_p
+        font-family: MullerMedium
+        font-size: 18px
+        text-align: center
+        color: #000000
+// prices
+
+// assurance        
+.assurance
+    padding-top: 50px
+    text-align: center
+    padding-bottom: 50px
+    &-text
+        font-family: MullerRegular
+        font-size: 16px
+        font-style: italic
+        color: #000000      
+        margin-bottom: 40px
+    & .title
+        font-family: MullerBold
+        font-size: 24px
+        color: #000000
+        margin-bottom: 35px
+        display: block
+    &-docs
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        flex-wrap: wrap
+    &-doc
+        font-family: MullerMedium
+        font-size: 14px
+        color: #000000
+        & p
+            margin-top: 12px
+        &_photo
+            width: 140px
+            height: 180px
+            overflow: hidden
+            position: relative
+            margin-bottom: 12px
+            margin: 0 auto
+            & img
+                width: 100%
+                position: absolute
+                top: -26px  
+                left: 0
+// assurance
+
+// about-us
+.about-us
+    padding-top: 50px
+    text-align: left
+    padding-bottom: 40px
+    background-color: #fcf9f1
+    & .title
+        display: block
+        font-family: MullerMedium
+        font-size: 22px
+        color: #000000
+        margin-bottom: 28px
+    &_block
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        & .sub-title
+            display: block
+            font-family: MullerMedium
+            font-size: 16px
+            text-align: left
+            color: #000000
+            margin-bottom: 18px 
+        &_social
+            margin-right: 130px
+            & .social
+                display: inline-block
+                width: 30px
+                height: 30px
+                margin-right: 10px
+                background-repeat: no-repeat
+                border-radius: 50%
+                border: 1px solid #e28234
+                margin-right: 20px
+                margin-bottom: 29px
+            & .social-vk
+                background: url(../img/about_us/vkontakte.png) no-repeat center
+            & .social-fb
+                background: url(../img/about_us/facebook.png) no-repeat center
+            & .social-insta
+                background: url(../img/about_us/instagram.png) no-repeat center
+        &_phone
+            display: flex
+            flex-direction: column
+            text-align: left
+            & .title-text
+                font-family: MullerMedium
+                font-size: 12px
+                font-style: italic
+                color: #000000
+            & .phone-number
+                font-family: MullerBold
+                font-size: 28px
+                color: #000000
+    &_office
+        margin-right: 10px
+        font-family: MullerMedium
+        font-size: 11px
+        text-align: left
+        color: #000000
+    &_offices_wrapper
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+// about-us 
+
+// footer
+footer
+    background-color: #383838
+    padding-top: 12px
+    padding-bottom: 12px
+.footer-wrapper
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    & .site
+        display: flex
+        flex-direction: row
+        align-items: center
+        & img
+            margin-right: 40px
+        & p
+            font-family: MullerRegular
+            font-size: 12px
+            color: #ffffff
+            margin-bottom: 10px
+        & a
+            font-family: MullerBold
+            font-size: 18px
+            color: #ffffff
+    & .busines-owner
+        font-family: MullerRegular
+        font-size: 12px
+        color: #ffffff
+        flex-basis: 45%
+// footer 
+
+// form
+.form
+    display: block
+    position: fixed
+    height: 100vh
+    width: 100vw
+    top: 0  
+    background: rgba(0, 0, 0, 0.6)
+    color: #000000
+    transition: all 1s ease-in
+    &-container
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        height: 100%
+    &-block
+        text-align: center
+        background: #ffffff
+        padding: 30px 15px
+        position: relative
+        border-radius: 15px 15px
+        & form
+            display: flex
+            flex-direction: column  
+            align-items: flex-start
+            font-family: MullerRegular
+            font-size: 20px
+            & label
+                width: 100%
+                display: flex
+                align-items: center
+                flex-direction: row
+                justify-content: space-between
+                margin-bottom: 10px
+            & button
+                margin: 15px auto
+            & input[type="text"]
+                margin-left: 15px
+                border-radius: 4px 4px
+                line-height: 28px
+                font-size: 20px
+                font-family: MullerRegular
+                font-size: 20px
+        & .btn-close
+            background: url(../img/close.png) no-repeat center
+            display: inline-block
+            width: 30px
+            height: 30px
+            margin-right: 10px
+            background-repeat: no-repeat
+            border-radius: 50%
+            margin-right: 20px
+            margin-bottom: 29px
+            position: absolute
+            top: 7px
+            right: -10px
+// form    
+.form 
+    display: none
+.slider-center 
+    & .slick-prev
+        display: none
+    & .slick-next 
+        display: none
+
+
+    
+

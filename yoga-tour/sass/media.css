@@ -1,0 +1,131 @@
+@media screen and (max-width: 960px) {
+  .container {
+    max-width: 80%;
+  }
+  .about-trip_descr h2, p {
+    text-align: center;
+  }
+  .about-trip_descr_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-trip_descr_list_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 15px;
+  }
+  .about-trip_descr_list_block span {
+    margin-right: 5px;
+  }
+  .reviews-wrapper_block_photo {
+    height: 110px;
+  }
+  .about-medicine_center_blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about-medicine_center_block {
+    margin-right: 0;
+  }
+  .about-medicine_center_descr h3 {
+    text-align: center;
+    display: block;
+  }
+  .about-medicine_center_descr .sub-title {
+    text-align: center;
+  }
+  .instructor_block_descr_slide p {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 878px) {
+  .reviews-wrapper_block_info p {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 706px) {
+  .about-medicine_block_descr {
+    max-width: 330px;
+  }
+  .about-medicine_block_descr p {
+    text-align: left;
+  }
+  .about-work_blocks {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-work_block {
+    -ms-flex-preferred-size: 29%;
+        flex-basis: 29%;
+    margin-bottom: 45px;
+  }
+  .price_tour_list_block_info p {
+    text-align: left;
+  }
+  .assurance-docs {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .assurance-doc {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-bottom: 30px;
+  }
+  .about-us_offices_wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-us_office {
+    margin-bottom: 20px;
+  }
+  .about-us {
+    text-align: center;
+  }
+  .about-us_block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-us_block .sub-title {
+    display: block;
+    text-align: center;
+  }
+  .about-us_block_social {
+    margin-right: 0;
+    text-align: center;
+  }
+  .about-us_block_phone {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .about-us_block_phone span {
+    display: block;
+  }
+  .prices-provide_str p {
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=media.css.map */
