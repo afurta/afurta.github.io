@@ -23,6 +23,11 @@
     padding-left: 60px;
     padding-right: 60px;
   }
+  .premium-block__title {
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
   .header__container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -46,11 +51,6 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .premium-block__title {
-    margin: 0 auto;
-    font-size: 20px;
-    margin-bottom: 15px;
   }
   .footer__container {
     -webkit-box-orient: vertical;
