@@ -22,6 +22,7 @@
   .premium-block__descr p {
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 10px;
   }
   .premium-block__sum {
     padding-left: 60px;
