@@ -1,0 +1,530 @@
+$maxWidth: 960
+
+@import fonts
+
+*
+    padding: 0
+    margin: 0
+
+.__container
+    max-width: $maxWidth+px
+    margin: 0 auto
+    padding-left: 30px
+    padding-right: 30px
+
+header
+    height: 100vh
+    background: url(../img/header/header-img.png) no-repeat bottom center
+    background-size: cover
+
+.header
+    &__top
+        display: flex
+        flex-direction: row
+        justify-content: start
+        padding-top: 18px
+        padding-left: 10px
+    &__logo
+        font-family: "JokermanRegular"
+        font-size: 14px
+        text-align: center
+        color: #FFFFFF
+        margin-right: 10px
+    &__log-out
+        padding: 9px 11px
+        font-family: "RobotoBold"
+        font-size: 14px
+        text-align: center
+        color: #FFFFFF
+        background: rgba(196, 196, 196, 0.2)
+        margin-right: 13px
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
+    &__registration
+        padding: 9px 11px
+        font-family: "RobotoBold"
+        font-size: 14px
+        text-align: center
+        color: #FFFFFF
+        background: rgba(196, 196, 196, 0.2)
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
+    &__container
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    &__content
+        height: 100vh
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    &__title
+        font-family: "RobotoBold"
+        @include adaptiv-font(60, 15)
+        line-height: 75px
+        text-align: center
+        color: #FFFFFF
+        margin-bottom: 10px
+    &__subtitle
+        font-family: "RobotoBold"
+        @include adaptiv-font(24, 17)
+        line-height: 28px
+        text-align: center
+        color: #FFFFFF
+        margin-bottom: 20px
+        position: relative
+        width: 100%
+        &::after
+            position: absolute
+            margin-bottom: 18px
+            content: ' '
+            bottom: -100%
+            left: 0
+            background: #ffffff 
+            width: 100%
+            height: 1px
+    &__descr
+        font-family: "RobotoBold"
+        line-height: 28px
+        @include adaptiv-font(24, 16)
+        text-align: center
+        color: #FFFFFF
+        display: block
+        margin-bottom: 50px
+    &__btn
+        border: 1px solid #FFFFFF
+        box-sizing: border-box
+        @include adaptiv-font(24, 18)
+        font-family: "RobotoBold"
+        line-height: 28px
+        text-align: center
+        color: #FFFFFF
+        padding: 10px 36px
+        border-radius: 30px
+        text-decoration: none
+
+
+.free-course
+    background: radial-gradient(50% 50% at 50% 50%, rgba(74, 50, 142, 0.38) 0%, rgba(220, 219, 219, 0) 0.01%, rgba(201, 214, 238, 0.4) 98.44%)
+    &__container
+        padding-top: 60px
+        padding-bottom: 60px
+    &__title
+        display: block
+        margin-bottom: 30px
+        font-family: "RobotoBold"
+        @include adaptiv-font(24, 18)
+        line-height: 28px
+        text-align: center
+        color: #000000
+    &__block
+       display: flex
+       flex-direction: row
+       justify-content: space-between
+.block
+    &__photo
+        background: url(../img/free-course/img.png) no-repeat center
+        background-size: cover
+        flex-basis: 75%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    &__title
+        z-index: 10
+        font-family: "RobotoMedium"
+        @include adaptiv-font(24, 16)
+        line-height: 28px
+        text-align: center
+        color: #FFFFFF
+        margin-bottom: 20px
+    &__btn
+        display: block
+        font-family: "RobotoMedium"
+        @include adaptiv-font(16, 10)
+        text-align: center
+        color: #FFFFFF
+        background: #E23A3A
+        border-radius: 20px
+        padding: 10px 18px 
+        text-decoration: none
+
+    &__info
+        background: radial-gradient(50% 50% at 50% 50%, rgba(191, 34, 205, 0.5) 9.37%, rgba(173, 38, 185, 0.25) 77.08%)
+        padding: 30px 15px 
+        display: flex
+        flex-direction: column  
+        align-items: center
+        justify-content: start
+    &__start-text
+        font-family: "RobotoBold"
+        @include adaptiv-font(14, 10)
+        text-align: center
+        color: #000000
+        margin-bottom: 30px
+        display: block
+    &__free-btn
+        background: #E95832
+        font-family: "RobotoBold"
+        text-decoration: none
+        padding: 13px 27px
+        border-radius: 5px
+        @include adaptiv-font(16, 10)
+        text-align: center
+        color: #FFFFFF
+        margin-bottom: 40px
+    & p
+        text-align: center
+        margin-bottom: 27px
+        font-family: "RobotoMedium"
+        @include adaptiv-font(14, 10)
+        text-align: center
+        color: #000000
+            
+
+.discounts
+    background: radial-gradient(50% 50% at 50% 50%, rgba(74, 50, 142, 0.38) 0%, rgba(220, 219, 219, 0) 0.01%, rgba(201, 214, 238, 0.4) 98.44%)
+    &__container
+        padding-top: 30px
+        padding-bottom: 70px
+    &__title-block
+        background: rgba(231, 61, 61, 0.86)
+        width: 100%
+        font-family: "RobotoBold"
+        @include adaptiv-font(30, 20)
+        text-align: center
+        padding-top: 14px
+        padding-bottom: 14px
+        color: #FFFFFF
+        margin-bottom: 80px
+    &__block
+        margin-bottom: 80px
+    &__premium-block
+        font-family: "RobotoBold"
+        @include adaptiv-font(20, 10)
+        line-height: 28px
+        text-align: center
+        color: #000000
+        margin-bottom: 20px
+
+.premium-block
+    &__container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: stretch
+    &__main-title
+        margin-bottom: 30px
+    &__descr
+        display: flex
+        flex-direction: column
+        align-items: start
+        padding-top: 40px
+        padding-left: 60px
+        padding-right: 60px
+        flex-basis: 60%
+        background: linear-gradient(180deg, rgba(75, 140, 238, 0.38) 0%, rgba(16, 109, 249, 0.38) 0.01%, rgba(75, 140, 238, 0.283021) 27.08%, rgba(75, 140, 238, 0.162973) 39.58%, rgba(75, 140, 238, 0.148586) 99.99%, rgba(75, 140, 238, 0) 100%)
+        & p
+            text-align: left
+            margin-left: 15px
+            margin-bottom: 15px
+            font-family: "RobotoMedium"
+            font-size: 14px
+            line-height: 22px
+            color: #000000
+            position: relative
+    &__new-course
+        background: #EF3737
+        border-radius: 2px
+        font-family: "RobotoBold"
+        font-size: 10px
+        color: #FFFFFF
+        padding: 3px 5px
+    &__title
+        font-family: "RobotoMedium"
+        @include adaptiv-font(20, 10)
+        line-height: 28px
+        text-align: left
+        color: #000000
+        margin-bottom: 17px
+    &__btn
+        display: block
+        padding: 10px 32px
+        background: rgba(0, 23, 228, 0.62)
+        border-radius: 20px
+        text-decoration: none
+        color: #ffffff
+        font-family: Roboto
+        font-size: 18px
+        margin: 0 auto
+        margin-top: 40px
+        margin-bottom: 40px
+    &__sum
+        background: linear-gradient(180deg, rgba(62, 134, 247, 0.5) 0%, rgba(76, 141, 241, 0.446721) 40.1%, rgba(125, 163, 223, 0.265625) 89.06%, rgba(89, 147, 236, 0.396723) 99.99%, rgba(196, 196, 196, 0) 100%)
+        display: flex
+        flex-direction: column
+        justify-content: start
+        align-items: center
+        padding-top: 26px
+        padding-right: 10px
+        padding-left: 10px
+    &__choice-title
+        background: rgba(0, 23, 228, 0.62)
+        border-radius: 5px
+        padding: 5px 15px
+        font-family: "RobotoBold"
+        font-size: 18px
+        text-align: center
+        color: #FFFFFF
+        margin-bottom: 21px
+    &__price
+        font-family: RobotoBold
+        font-size: 18px
+        line-height: 21px
+        color: #EF3737
+        margin-bottom: 35px
+    &__text
+        font-family: "RobotoMedium"
+        font-size: 14px
+        line-height: 16px
+        text-align: center
+        color: #000000
+        & p
+            margin-bottom: 28px
+
+
+
+
+.disc-block
+    &__photo
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        flex-basis: 60%
+    &__title
+        z-index: 10
+        font-family: "RobotoMedium"
+        @include adaptiv-font(24, 16)
+        line-height: 28px
+        text-align: center
+        color: #FFFFFF
+        margin-bottom: 20px
+    &__subtitle
+        display: block
+        font-family: "RobotoMedium"
+        @include adaptiv-font(12, 8)
+        text-align: center
+        color: #FFFFFF
+    &__btn
+        display: block
+        font-family: "RobotoMedium"
+        @include adaptiv-font(16, 10)
+        text-align: center
+        color: #FFFFFF
+        border-radius: 20px
+        padding: 10px 18px 
+        text-decoration: none
+        border: 2px solid #EF3737
+        box-sizing: border-box
+        border-radius: 20px
+    &__info
+        flex-basis: 40%
+        background: #F8F8F8
+        padding: 20px 20px 
+        display: flex
+        flex-direction: column  
+        align-items: center
+        justify-content: start
+    &__start-text
+        font-family: "RobotoBold"
+        @include adaptiv-font(14, 10)
+        text-align: center
+        color: #000000
+        margin-bottom: 30px
+        display: block
+        text-transform: uppercase
+    &__free-btn
+        background: #EF3737
+        position: relative
+        font-family: "RobotoBold"
+        text-decoration: none
+        padding: 5px 15px
+        border-radius: 5px
+        @include adaptiv-font(16, 10)
+        text-align: center
+        color: #FFFFFF
+        margin-bottom: 20px
+    & p
+        display: block
+        text-align: left
+        margin-bottom: 27px
+        font-family: "RobotoMedium"
+        @include adaptiv-font(12, 8)
+        color: #000000
+        padding-left: 15px
+    &__descr
+        width: 100%
+        position: relative
+        padding-top: 30px
+        &::before
+            width: 800px
+            position: absolute
+            margin-bottom: 18px
+            content: ' '
+            left: 0
+            top: -10px
+            background: #DDDCDC 
+            width: 100%
+            height: 1px
+    &_reverse
+        flex-direction: row-reverse
+
+.disc-block__free-btn
+    &-green
+        background: #33CC42
+    &-purple
+        background: #9B33CC
+    &-blue
+        background: #2656FF
+.disc-block__btn
+    &-green
+        border: 2px solid #33CC42
+    &-purple
+        border: 2px solid #9B33CC
+    &-blue
+        border: 2px solid #2656FF
+.disc-block
+    &__photo1
+        background: url(../img/discounts/disc-img1.png) no-repeat center
+        background-size: cover
+    &__photo2
+        background: url(../img/discounts/disc-img2.png) no-repeat center
+        background-size: cover
+    &__photo3
+        background: url(../img/discounts/disc-img3.png) no-repeat center
+        background-size: cover
+    &__photo4
+        background: url(../img/discounts/disc-img4.png) no-repeat center
+        background-size: cover
+
+
+.question
+    background: radial-gradient(50% 50% at 50% 50%, rgba(74, 50, 142, 0.38) 0%, rgba(220, 219, 219, 0) 0.01%, rgba(201, 214, 238, 0.4) 98.44%)
+    text-align: center
+    &__container
+        position: relative
+        padding-top: 100px
+        padding-bottom: 80px
+        text-align: center
+        overflow: hidden
+        &::after
+            content: ' '
+            display: block
+            height: 1px
+            position: absolute
+            width: 80vw
+            top: 0
+            left: 0
+            right: 0
+            margin: 0 auto
+            background: rgba(101, 101, 101, 0.4)
+    &__block-title
+        font-family: "RobotoBold"
+        @include adaptiv-font(20, 10)
+        line-height: 28px
+        text-align: center
+        color: #000000
+        margin-bottom: 10px
+    &__block-text
+        font-family: "RobotoRegular"
+        @include adaptiv-font(14, 10)
+        line-height: 16px
+        text-align: center
+        color: rgba(0, 0, 0, 0.62)
+        margin-bottom: 16px
+    &__socials
+        & ul
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: center
+            flex-wrap: wrap
+            & li
+                list-style: none
+                display: inline-block
+                width: 48px
+                height: 48px
+                margin-right: 15px
+                &::nth-last-child
+                    margin-right: 0
+                & a
+                    text-decoration: none
+    &__social-tg
+        background: url(../img/question/telegram.png)
+    &__social-gl
+        background: url(../img/question/google-plus.png)
+    &__social-vk
+        background: url(../img/question/vk.png)
+    &__social-insta
+        background: url(../img/question/instagram.png)
+footer
+    background: #000000
+    padding-bottom: 23px
+.footer
+    &__container
+        padding-top: 53px
+        padding-bottom: 23px
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+    &__cards
+        flex-basis: 50%
+    &__cards-block
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin-bottom: 10px
+    &__card-block
+        font-family: RobotoMedium
+        font-size: 12px
+        line-height: 14px
+    &__cards-text
+        font-family: "RobotoMedium"
+        font-size: 12px
+        line-height: 14px
+        color: #FFFFFF
+        margin-bottom: 10px
+    &__item
+        font-family: "RobotoMedium"
+        font-size: 12px
+        line-height: 14px
+        color: #FFFFFF
+        margin-bottom: 10px
+    &__copyright
+        font-family: "RobotoRegular"
+        text-align: center
+        color: rgba(255, 255, 255, 0.62)
+        font-size: 14px
+        line-height: 16px
+
+@import media
+
+
+
+
+
+
+
+            
+
+
+
+
