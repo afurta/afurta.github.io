@@ -869,9 +869,30 @@ footer {
     padding-left: 60px;
     padding-right: 60px;
   }
+  .header__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header__content {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .header__title {
+    margin-bottom: 0;
+  }
+  .header__descr {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 460px) {
+  .header__top {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .premium-block__title {
     margin: 0 auto;
     font-size: 20px;
