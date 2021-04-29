@@ -21,6 +21,7 @@
   }
   .premium-block__descr p {
     margin: 0 auto;
+    text-align: center;
   }
   .premium-block__sum {
     padding-left: 60px;
