@@ -875,9 +875,9 @@ footer {
             justify-content: center;
   }
   .header__content {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .header__title {
     margin-bottom: 0;
