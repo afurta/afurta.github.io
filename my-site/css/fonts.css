@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "BebasNeueBold";
+  src: url(../fonts/bebas-neue-bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "NotoSansBold";
+  src: url(../fonts/NotoSans-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "NotoSansRegular";
+  src: url(../fonts/NotoSans-Regular.ttf) format("truetype");
+}
+/*# sourceMappingURL=fonts.css.map */
