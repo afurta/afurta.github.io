@@ -7,8 +7,12 @@ body
     margin: 0 auto
     max-width: 1140px
 
-
-            
+.header-title 
+    & h2
+        font-size: 2em
+        text-align: left
+        font-family: 'NotoSansBold'
+        color: #000000
 
 .main 
     position: relative
@@ -59,9 +63,10 @@ body
     &__header 
         display: flex
         flex-direction: row
-        justify-content: start
+        justify-content: center
         align-items: center
-        
+        & h2 
+            text-align: center
     &__info 
         display: flex
         flex-direction: row
@@ -100,15 +105,17 @@ body
         font-family: 'NotoSansRegular'
         color: #000000
 
-.header-title 
-    font-size: 2em
-    text-align: center
-    font-family: 'NotoSansBold'
-    color: #000000
+
 
 .skills
     border-bottom: #dddddd solid 1px
+    padding-top: 30px
+    padding-bottom: 80px
     &__blocks 
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        align-items: start
     &__block-skils 
 .block-skils 
     &__title 
@@ -116,13 +123,136 @@ body
 
 .block-skills 
     &__item 
+        margin-bottom: 10px
 .skill-item 
     &__header
+        text-align: left
+        font-size: 1.5em
+        text-align: left
+        font-family: 'NotoSansBold'
+        color: #000000
+        margin-bottom: 5px
     &__descr 
-.block-exp 
-    &__title 
+        font-family: 'NotoSansRegular'
+        color: #000000
+        font-size: 1em
+.block-exp
     &__list 
     &__item 
 .exp-item 
-    &__header 
+    text-align: left
+    text-align: left
+    font-family: 'NotoSansBold'
+    color: #000000
+    &__comp 
+        font-size: 1.5em
+        margin-bottom: 5px
+    &__job 
+        font-size: 1.3em
+        margin-bottom: 5px
+    &__date 
+        font-size: 1.1em
+        margin-bottom: 5px
     &__descr 
+        font-family: 'NotoSansRegular'
+        color: #000000
+        font-size: 1em
+        margin-bottom: 5px
+.exp-item 
+    &__header 
+       
+    &__descr 
+        flex: 0 1 300px
+        max-width: 390px
+
+
+.portfolio 
+    border-bottom: #dddddd solid 1px
+    background: #fafafa
+    padding: 30px 30px 80px 30px
+    &__header 
+        text-align: center
+        & h2
+            text-align: center
+    &__list 
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__switchs
+        width: 100%
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        align-items: center
+        margin-bottom: 30px
+    &__switch 
+        text-align: center
+        font-family: 'NotoSansBold'
+        font-size: 1.2em 
+        cursor: pointer
+        &_active
+            border-radius: 0 0 2px 2px
+            border-bottom: 2px solid #000
+    &__item 
+        display: none
+        flex-direction: row
+        align-items: start
+        justify-content: space-around
+        flex-wrap: wrap
+        &_active
+            display: flex
+    &__block 
+        flex: 0 1 300px
+        box-shadow: 0px 4px 43px rgba(0, 0, 0, 0.25)
+        border-radius: 21px
+        overflow: hidden
+        background-color: #F5F5F5
+        margin-bottom: 30px
+        
+.block 
+    &__img
+        position: relative
+        & > img
+            height: 200px
+            width: 100%
+            object-fit: cover
+            z-index: 1
+            width: 100%
+            border-radius: 19px 19px 0px 0px
+    &__img-wrapper
+        background: rgba(0, 0, 0, 0.1)
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 200px
+        transition: .5s all
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
+        &_active
+            transition: .5s all
+            background-color: rgba(0, 0, 0, 0.3)
+    &__info
+        padding: 20px 30px 40px 30px
+    &__date 
+        text-align: left
+        font-family: 'NotoSansBold'
+        font-size: 1.1em 
+        margin-bottom: 10px
+    &__descr 
+        text-align: left
+        font-family: 'NotoSansRegular'
+        font-size: 1em 
+        & span
+            font-family: 'NotoSansBold'
+    &__eye
+        transition: .5s all
+        display: none
+        width: 56px
+        height: 56px
+        &_active
+            transition: .5s all
+            display: block
+
