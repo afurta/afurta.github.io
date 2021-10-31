@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+      <table class="main__table">
+        <thead>
+          <tr>
+            <td>ФИО</td>
+            <td>Телефон</td>
+            <td>Кем приходится</td>
+            <td colspan="2">Кнопки действий</td>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+    <div class="form">
+      <div class="form__container">
+        <form action="" class="data-form" onsubmit="formHandler(event)">
+          <h1 class="form__header text-center">Введите данные</h1>
+          <label class="d-flex justify-content-between mb-3" for="name"
+            >ФИО
+            <input
+              name="name"
+              type="text"
+              class="name"
+              onchange="validatePhone(value)"
+              placeholder="Иванов Иван Иванович"
+            />
+          </label>
+          <hr />
+          <label class="d-flex justify-content-between mb-3" for="phone"
+            >Телефон
+            <input
+              name="phone"
+              type="text"
+              class="phone"
+              placeholder="8 (999) 111-22-33"
+            />
+          </label>
+          <hr />
+          <label class="d-flex justify-content-between mb-3" for="who"
+            >Кем приходится
+            <input name="who" type="text" class="who" placeholder="Банк" />
+          </label>
+          <span class="check__error">Форма заполненна некорректно</span>
+          <hr />
+          <button type="submit" class="form__send-btn">Отправить данные</button>
+          <button type="button" class="form__update-btn">
+            Обновить данные
+          </button>
+          <div class="form__btn-close">
+            <img src="./img/cancel.png" alt="" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <section class="fixed-sect">
+      <!-- <button class="fixed-sect__upd-btn">Обновить таблицу</button> -->
+      <div class="btn__form">
+        <svg
+          height="46"
+          version="1.1"
+          width="46"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 64 64"
+        >
+          <desc>Created with Snap</desc>
+          <defs></defs>
+          <g>
+            <path
+              fill="none"
+              stroke="#000"
+              stroke-width="5"
+              d="m 32,4.962098 0,53.893986"
+            ></path>
+            <path
+              fill="none"
+              stroke="#000"
+              stroke-width="5"
+              d="m 5.1127494,31.909091 53.8342436,0"
+            ></path>
+          </g>
+        </svg>
+      </div>
+    </section>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
