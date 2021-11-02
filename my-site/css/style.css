@@ -81,6 +81,43 @@ body {
   padding-bottom: 40px;
 }
 
+.main__sign img {
+  -webkit-transform: scale(0.35);
+          transform: scale(0.35);
+  -webkit-animation: pulse 2s ease-in-out infinite;
+          animation: pulse 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale(0.35);
+            transform: scale(0.35);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.35);
+            transform: scale(0.35);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale(0.35);
+            transform: scale(0.35);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.35);
+            transform: scale(0.35);
+  }
+}
+
 .main__video {
   z-index: 1;
   -o-object-fit: cover;

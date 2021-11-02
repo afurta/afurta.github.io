@@ -31,4 +31,8 @@ addEventListener("DOMContentLoaded", () => {
         .classList.add("portfolio__item_active");
     });
   });
+  const a = () => 2;
+  const b = () => 3;
+
+  console.log(a + b);
 });
