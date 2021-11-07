@@ -1,0 +1,117 @@
+@media screen and (max-width: 850px) {
+  .about__text {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    margin-bottom: 30px;
+  }
+  .main__title h1 {
+    font-size: 2.5em;
+  }
+  .about__text {
+    font-size: 1.0em;
+    text-align: left;
+  }
+  .skills__block-skils {
+    font-size: 0.9em;
+  }
+  .block-exp__title h2,
+  .block-skils__title h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .skills__block-skils {
+    margin-bottom: 30px;
+  }
+  .skill-item__header {
+    text-align: center;
+  }
+  .skill-item__descr {
+    text-align: center;
+  }
+  .exp-item__comp,
+  .exp-item__job,
+  .exp-item__date,
+  .exp-item__descr {
+    text-align: center;
+  }
+  .exp-item__descr {
+    margin: 0 auto;
+  }
+  .portfolio__switchs {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .portfolio__switch {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  h2 {
+    margin-bottom: 20px;
+  }
+  .main__title h1 {
+    font-size: 1.5em;
+  }
+  .about__text {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .about__photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  .about__photo img {
+    max-width: 300px;
+  }
+  .about__descr {
+    margin: 0;
+  }
+  .portfolio__switchs {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .portfolio__switch {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  h2 {
+    margin-bottom: 20px;
+  }
+  .main__title h1 {
+    font-size: 1.5em;
+  }
+  .about__text {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .about__photo {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  .about__descr {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=media.css.map */

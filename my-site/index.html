@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./css/media.css">
   </head>
   <body>
-    <main class="main">
+    <!-- <main class="main">
       <div class="main__content">
         <div class="main__title">
           <h1>Привет, меня зовут Артем. </br>Я начинающий frontend-разработчик.</h1>
@@ -24,9 +28,31 @@
           class="main__video"
           src="./video/Pexels Videos 2278095.mp4"
       ></video>
+    </main> -->
+
+     <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="main">
+            <div class="main__content">
+            <div class="main__title">
+              <h1>Привет, меня зовут Артем. </br>Я начинающий frontend-разработчик.</h1>
+            </div>
+          
+          </div>
+          <div class="main__sign">
+            <a href=""><img src="./img/Vector.png" alt=""></a>
+          </div>
+          <video autoplay muted
+              class="main__video"
+              src="./video/Pexels Videos 2278095.mp4"
+          ></video>
+          </div>
+        </div>
+      </div>
     </main>
 
-
+<!-- 
     <section class="about">
       <div class="container">
         <div class="header-title about__header">
@@ -41,61 +67,84 @@
           </div>
         </div>
       </div>
+    </section> -->
+
+     <section class="about">
+      <div class="container">
+        <div class="header-title about__header">
+          <h2>О себе:</h2>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-12 col-sm-6 col-md-6 ">
+              <div class="about__photo">
+                <img src="./img/photo.png" alt="">
+              </div>
+            </div>
+           <div class="col-12 col-sm-6 col-md-6">
+              <div class="about__descr">
+                <div class="about__text">В настоящее время проживаю в городе Екатеринбург. На данный момент занимаюсь самообучением и параллельно ищу работу для расширения своих навыков. Также занимаюсь созданием сайтов на конструкторе WP Elementor и настройкой контекстной рекламы.</div>
+              </div>
+           </div>
+        </div>
+      </div>
     </section>
 
 
     <section class="skills">
       <div class="container">
-        <div class="skills__blocks">
-          <div class="skills__block-skils block-skils">
-            <div class="block-skils__title header-title">
-              <h2>Мой стек:</h2>
-            </div>
-            <div class="block-skils__list">
-              <div class="block-skills__item skill-item">
-                <div class="skill-item__header">
-                  Веб-разработка: 
-                </div>
-                <div class="skill-item__descr">
-                  HTML, CSS, SASS, Bootstrap, 
-                  JavaScript, ReactJS, Redux
-                </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 ">
+            <div class="skills__block-skils block-skils">
+              <div class="block-skils__title header-title">
+                <h2>Мой стек:</h2>
               </div>
-              <div class="block-skills__item skill-item">
-                <div class="skill-item__header">
-                  Контекстная реклама:
+              <div class="block-skils__list">
+                <div class="block-skills__item skill-item">
+                  <div class="skill-item__header">
+                    Веб-разработка: 
+                  </div>
+                  <div class="skill-item__descr">
+                    HTML, CSS, SASS, Bootstrap, 
+                    JavaScript, ReactJS, Redux
+                  </div>
                 </div>
-                <div class="skill-item__descr">
-                  Яндекс Директ, Google Поиск
+                <div class="block-skills__item skill-item">
+                  <div class="skill-item__header">
+                    Контекстная реклама:
+                  </div>
+                  <div class="skill-item__descr">
+                    Яндекс Директ, Google Поиск
+                  </div>
                 </div>
-              </div>
-              <div class="block-skills__item skill-item">
-                <div class="skill-item__header">
-                  Прочее: 
-                </div>
-                <div class="skill-item__descr">
-                  WordPress Elementor, настройка AmoCRM
+                <div class="block-skills__item skill-item">
+                  <div class="skill-item__header">
+                    Прочее: 
+                  </div>
+                  <div class="skill-item__descr">
+                    WordPress Elementor, настройка AmoCRM
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="skills__block-skils block-exp">
-            <div class="block-exp__title header-title">
-              <h2>Мой опыт:</h2>
-            </div>
-            <div class="block-exp__list">
-              <div class="block-exp__item exp-item">
-                <div class="exp-item__comp">
-                  Школа удаленных профессий 
-                </div>
-                <div class="exp-item__job">
-                  Технический специалист 
-                </div>
-                <div class="exp-item__date">
-                  Май - сентябрь 2021
-                </div>
-                <div class="exp-item__descr">
-                  Верстка сайтов с использованием WP Elementor, работа с платформой GetCourse
+          
+          <div class="col-12 col-sm-6 ">
+            <div class="skills__block-skils block-exp">
+              <div class="block-exp__title header-title">
+                <h2>Мой опыт:</h2>
+              </div>
+              <div class="block-exp__list">
+                <div class="block-exp__item exp-item">
+                  <div class="exp-item__comp">
+                    Школа удаленных профессий 
+                  </div>
+                  <div class="exp-item__job">
+                    Технический специалист 
+                  </div>
+                  <div class="exp-item__date">
+                    Май - сентябрь 2021
+                  </div>
+                  <div class="exp-item__descr">Верстка сайтов с использованием WP Elementor, работа с платформой GetCourse</div>
                 </div>
               </div>
             </div>
