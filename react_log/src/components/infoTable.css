@@ -1,0 +1,11 @@
+th {
+  vertical-align: top;
+  width: 100px;
+}
+table {
+  flex: 1 1 auto;
+  max-width: 750px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
