@@ -1,0 +1,30 @@
+.todoItem 
+  height: 100px
+  position: relative
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  &__delete
+    cursor: pointer
+    position: absolute
+    top: 5px
+    right: 5px
+    display: inline
+  &__checkbox    
+    cursor: pointer
+    position: absolute
+    bottom: 5px
+    right: 5px
+    display: inline
+  &__title
+    width: 80%
+  &__checkbox-done
+    color: rgb(35, 122, 0)
+  &__checkbox-play
+    color: rgb(255, 0, 0)
+  &__delete-icon
+
+@media screen and (max-width: 450px)
+    .todoItem__title
+      width: 70%

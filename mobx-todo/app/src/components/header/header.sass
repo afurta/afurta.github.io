@@ -1,0 +1,14 @@
+.nav-wrapper 
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center 
+    & ul li
+        margin-right: 20px
+
+@media screen and (max-width: 450px)
+    .nav-wrapper 
+        & ul li
+            margin-right: 0
+            & a
+                padding: 5px
