@@ -1,26 +1,34 @@
 import { observer } from "mobx-react";
-import React, { useState } from "react";
+import React from "react";
 import store from "../../store";
 import TodoItem from "./TodoItem/TodoItem";
 import "./TodoList.sass";
 const shortid = require("shortid");
 
+interface User {
+  id: any;
+  title: any;
+  done: boolean;
+}
+
 const TodoList: React.FC = observer(() => {
-  const [title, setTitle] = useState<string>("");
-  const [input, setInput] = useState<boolean>(false);
+  const title = store.title;
+  const input = store.input;
   const changeInput = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setTitle(event.target.value);
+    store.setTitle(event.target.value);
   };
 
   const keyPressHandler = (event: React.KeyboardEvent) => {
+    console.log();
     if (event.key === "Enter") {
-      store.addItem({
+      let obj: User = {
         id: shortid.generate(),
         title,
         done: false,
-      });
-      setInput(false);
-      setTitle("");
+      };
+      store.addItem(obj);
+      store.setInput(false);
+      store.setTitle("");
     }
   };
   return (
@@ -36,7 +44,7 @@ const TodoList: React.FC = observer(() => {
           />
         ) : null}
 
-        <i className="material-icons" onClick={() => setInput(true)}>
+        <i className="material-icons" onClick={() => store.setInput(true)}>
           add
         </i>
       </div>

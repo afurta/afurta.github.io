@@ -8,13 +8,19 @@ const Header: React.FC = () => {
       <div className="nav-wrapper">
         <ul className="right ">
           <li>
-            <a onClick={() => store.AllArr()}>Все задачи</a>
+            <a href="/#" onClick={() => store.AllArr()}>
+              Все задачи
+            </a>
           </li>
           <li>
-            <a onClick={() => store.findDoneItem()}>Выполненные</a>
+            <a href="/#" onClick={() => store.findDoneItem()}>
+              Выполненные
+            </a>
           </li>
           <li>
-            <a onClick={() => store.InProgressItem()}>В процессе</a>
+            <a href="/#" onClick={() => store.InProgressItem()}>
+              В процессе
+            </a>
           </li>
         </ul>
       </div>
