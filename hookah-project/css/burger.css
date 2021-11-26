@@ -1,0 +1,81 @@
+.header__nav {
+  display: flex;
+  justify-content: flex-end;
+}
+/* Гамбургер иконка */
+.menu-head-btn {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 13;
+  overflow: hidden;
+}
+
+.menu-head-btn span {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #c8cdd8;
+  transition: all 0.5s;
+}
+
+.menu-head-btn span:nth-of-type(2) {
+  top: calc(50% - 8px);
+}
+.menu-head-btn span:nth-of-type(3) {
+  top: calc(50% + 8px);
+}
+
+/* Меняем гамбургер иконку, когда меню открыто */
+.menu-head-btn.active span:nth-of-type(1) {
+  display: none;
+}
+.menu-head-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+}
+.menu-head-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+/* Меню, которое будет появляться */
+.menu-head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: #30333b;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+
+.menu-head.active {
+  transform: translateX(0);
+  z-index: 12;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 84px;
+}
+
+.menu-head li {
+  text-align: center;
+  list-style: none;
+}
+
+.menu-head li a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 48px;
+  text-align: center;
+  color: #edf0f4;
+}
