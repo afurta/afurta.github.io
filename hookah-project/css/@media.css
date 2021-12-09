@@ -1,0 +1,300 @@
+@media screen and (max-width: 1200px) {
+  .header__nav ul {
+    display: none;
+  }
+  .__container {
+    max-width: 730px;
+    padding: 0 30px;
+  }
+  h1 {
+    font-size: 3.1rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  .menu-head {
+    display: block;
+  }
+  .menu-head-btn {
+    display: block;
+  }
+  .traditions__block {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 270px;
+            flex: 1 0 270px;
+  }
+  .traditions__descr {
+    max-width: 750px;
+  }
+  .traditions__block-one {
+    padding-top: 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .traditions__block-two {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .traditions__block-two img {
+    width: 100%;
+  }
+  .traditions__block-three {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .traditions__block-four {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    margin-right: 10px;
+  }
+  .traditions__block-five {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    margin-left: 10px;
+  }
+  .news .slick-arrow, .interior .slick-arrow {
+    margin-right: 30px;
+  }
+  .about__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: translateY(-280px);
+            transform: translateY(-280px);
+  }
+  .menu-head {
+    padding-bottom: 210px;
+  }
+  .menu-head__info-name_active {
+    font-size: .9rem;
+  }
+  .menu-head__picture {
+    width: 130px;
+    top: -120px;
+  }
+  .block-menu {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .block-menu__top {
+    padding: 45px 15px 42px 15px;
+  }
+  .block-menu__items {
+    padding: 45px 15px 42px 15px;
+  }
+  .about {
+    background-size: cover;
+    padding: 100px 0 0 0;
+  }
+  .slider-item__date {
+    font-size: 1rem;
+  }
+  .slider-item__desr {
+    font-size: .9rem;
+  }
+  .news {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .club {
+    padding-top: 45px;
+    padding-bottom: 50px;
+    background-position: none;
+  }
+  .club__descr {
+    max-width: 465px;
+  }
+  .club__descr-title {
+    font-size: 1.3rem;
+  }
+  .club__descr-info {
+    font-size: 1rem;
+  }
+  .club__btn a {
+    padding: 17px 20px 19px 20px;
+  }
+  .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__contact-block {
+    max-width: none;
+    width: 730px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__map {
+    width: 100%;
+    margin-right: 0;
+  }
+  .footer__list {
+    max-width: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .footer__socials {
+    margin-bottom: 50px;
+  }
+  .footer__img {
+    top: 190px;
+  }
+  .footer__head {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.7rem;
+    line-height: 69px;
+  }
+  .__container {
+    max-width: 360px;
+  }
+  .header__logo {
+    margin-right: 0;
+  }
+  .header__social {
+    display: none;
+  }
+  .header__nav {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .main__contanct {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main__phone {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+  .main__days {
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+  }
+  .main__quad {
+    width: 310px;
+  }
+  .about__exception {
+    max-width: 100%;
+    padding: 0;
+  }
+  .traditions {
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+  .traditions__block-two {
+    display: none;
+  }
+  .traditions__info {
+    padding-top: 60px;
+  }
+  .interior .slick-list {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .menu {
+    padding-top: 40px;
+  }
+  .menu__info-names {
+    border: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu__picture {
+    top: -131px;
+    right: -10px;
+    width: 140px;
+  }
+  .menu__blocks {
+    overflow: hidden;
+  }
+  .about {
+    background: url(../img/about/about.png) no-repeat;
+  }
+  .about__info {
+    padding: 65px 20px;
+  }
+  .about__info-img {
+    width: 140px;
+    right: 5px;
+    top: 62px;
+  }
+  .club {
+    background-position: -2247px;
+    background-size: cover;
+    padding: 47px 0 35px 0;
+  }
+  .club__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .club__descr-info {
+    margin-bottom: 30px;
+  }
+  .club__btn {
+    margin-bottom: 65px;
+  }
+  .footer {
+    padding-top: 60px;
+  }
+  .footer__head {
+    width: 360px;
+  }
+  .footer__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0;
+  }
+  .footer__contact-block {
+    max-width: 360px;
+  }
+  .footer img {
+    top: -10px;
+    right: 26px;
+  }
+}
+/*# sourceMappingURL=@media.css.map */
